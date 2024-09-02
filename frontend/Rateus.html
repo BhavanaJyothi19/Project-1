@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordnance Factory - Rate Us</title>
+    <link rel="icon" href="medak.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ordnance Factory - Help</h1>
+        <!-- Include navigation -->
+        <div id="nav-placeholder"></div>
+    </header>
+    
+    <main>
+        <section id="rate-us">
+            <h2>Rate Us</h2>
+            <p>Your feedback is important to us. Please take a moment to rate our services.</p>
+            <img src="rateusimg.jpg" alt="Rate Us" class="rate-us-image">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSSsqqzJIM2C0UjWoME5KTkozMDIyME5MNDZLM7QyqDBKSzY1Mki2SLMwMbRIMkjy4s5PSVNIS0wuyS-qBABxUhNz&q=odf+factory&rlz=1C1JJTC_en-GBIN1070IN1070&oq=odf+fa&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOTINCAEQLhivARjHARiABDIGCAIQRRhAMgYIAxBFGDsyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg0OTU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" class="rate-button">Rate Us on Google</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ordnance Factory. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
